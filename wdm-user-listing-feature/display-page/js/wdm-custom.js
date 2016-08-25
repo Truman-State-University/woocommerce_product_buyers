@@ -59,7 +59,7 @@ jQuery( "th[data-pos]" ).each(function() {
         
     var table = jQuery('#example').DataTable();
  table
-        .columns( jQuery('th[title=Products]').attr('data-pos') )
+        .columns( jQuery('th[title=Product]').attr('data-pos') )
         .search(this.value ?  '(^'+this.value+'$)|( , '+this.value+'$)|(^'+this.value+' , )|( , '+this.value+' , )': '', true, false)
         .draw();
         
