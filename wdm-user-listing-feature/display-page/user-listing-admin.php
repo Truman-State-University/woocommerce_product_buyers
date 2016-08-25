@@ -85,7 +85,7 @@ wp_localize_script( 'wdm_custom_js', 'wdm_all_products_name', $all_products_name
 			global $wp_query;
 			$args = array(
 				'post_type' => 'shop_order',
-				'post_status' => array('wc-pending','wc-processing','wc-completed'),
+				'post_status' => array('wc-processing','wc-completed'),
 				'posts_per_page' => -1,
 			);
 
